@@ -84,6 +84,12 @@ var Http = {
         xhr.open(type, url);
         Http.send(url);
 
+        // movimenta a barra de rolagem para o topo da pÃ¡gina
+        $('html,body').animate({
+            scrollTop: 0
+        }, {
+            duration: 200
+        });
     },
 
     send: (url) => {

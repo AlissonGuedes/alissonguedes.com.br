@@ -54,6 +54,7 @@ section header h3 {
 .sidenav-active-rounded .sidenav li>a.active {
     margin-right: 1.15rem;
     border-radius: 0 25px 25px 0;
+    overflow: hidden;
 }
 
 .sidenav li a.active {

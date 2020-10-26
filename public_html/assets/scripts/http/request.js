@@ -11,9 +11,13 @@ var Request = {
             var link = $(this).data('href') || $(this).attr('href');
             var target = $(this).attr('target') || false;
 
+            if (!Request.isLink(link)) {
+                return;
+            }
+
             e.preventDefault();
 
-            if (Request.isLink(link) && !target) {
+            if (!target) {
 
                 if (window.location.origin + link !== window.location.href) {
                     Http.goTo(link);
@@ -44,7 +48,7 @@ var Request = {
     isLink: (href) => {
 
         var URL = typeof href.split(BASE_URL)[1] === 'undefined' ? href : href.split(BASE_URL)[1];
-        var isAnchor = /^[jJ]ava[sS]cript(\:[a-z]+)?|#([a-z]?)+$/i.test(URL);
+        var isAnchor = /^[jJ]ava[sS]cript(\:[a-z]+)?|#([a-z]+)?$/i.test(URL);
 
         return href !== '' && !isAnchor && typeof URL !== 'undefined';
 
