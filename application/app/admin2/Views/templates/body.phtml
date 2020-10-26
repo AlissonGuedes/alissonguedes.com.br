@@ -1,0 +1,28 @@
+<?php
+
+/*
+ * Barra de Menus lateral
+ */
+require('sidebar.phtml');
+?>
+
+<?php
+/**
+ * Cabeçalho
+ */
+require(VIEWSPATH . 'templates' . DS . 'header.phtml');
+?>
+
+<?php
+/**
+ * View
+ */
+require($this->renderVars['file']); // PHP will be processed
+?>
+
+<?php
+/**
+ * Footer
+ */
+require(VIEWSPATH . 'templates' . DS . 'footer.phtml');
+?>

@@ -1,0 +1,4 @@
+[21-Oct-2020 14:24:19 America/Sao_Paulo] PHP Warning:  array_shift() expects parameter 1 to be array, null given in /home/alissonguedes/dev/raboni.com.br/application/config/Boot.php on line 12
+[21-Oct-2020 14:24:30 America/Sao_Paulo] PHP Warning:  array_shift() expects parameter 1 to be array, null given in /home/alissonguedes/dev/raboni.com.br/application/config/Boot.php on line 12
+[21-Oct-2020 14:24:43 America/Sao_Paulo] PHP Warning:  array_shift() expects parameter 1 to be array, null given in /home/alissonguedes/dev/raboni.com.br/application/config/Boot.php on line 12
+[24-Oct-2020 02:59:21 America/Sao_Paulo] PHP Warning:  array_shift() expects parameter 1 to be array, null given in /home/alissonguedes/dev/raboni.com.br/application/config/Boot.php on line 12
