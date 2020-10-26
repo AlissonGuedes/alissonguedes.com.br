@@ -5,6 +5,10 @@ html {
     color: #6b6f82
 }
 
+body {
+    overflow-x: hidden;
+}
+
 section {
     position: relative;
 }
@@ -71,9 +75,9 @@ section header h3 {
     place-content: center;
     flex-direction: column;
     padding: 0 25px 0px 0px;
-    max-width: inherit;
-    min-width: inherit;
-    width: inherit;
+    max-width: 235px;
+    min-width: 235px;
+    width: 235px;
     z-index: 998;
     position: fixed;
 }
