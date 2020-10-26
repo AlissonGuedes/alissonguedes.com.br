@@ -32,7 +32,7 @@ class Database extends \CodeIgniter\Database\Config
 	public $default = [
 		'DSN'      => '',
 		'hostname' => 'localhost',
-		'database' => 'alissong_rabonicosmeticos',
+		'database' => 'alissong_app',
 		'username' => 'alissong_app',
 		'password' => '$oH#RwlwDHAf',
 		'DBDriver' => 'MySQLi',
@@ -60,7 +60,7 @@ class Database extends \CodeIgniter\Database\Config
 	public $tests = [
 		'DSN'      => '',
 		'hostname' => 'localhost',
-		'database' => 'alissong_rabonicosmeticos_dev',
+		'database' => 'alissong_app_dev',
 		'username' => 'alissong_app',
 		'password' => '$oH#RwlwDHAf',
 		'DBDriver' => 'MySQLi',
