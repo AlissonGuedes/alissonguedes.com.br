@@ -4,10 +4,16 @@ var xhr;
 
 var Http = {
 
-    goTo: (url) => {
+    goTo: (url, params) => {
 
         Http.get(url);
+
         Request.refreshUrl(url);
+
+        // Redirecionar url com parâmetro.
+        if ( typeof params !== 'undefined') {
+           Form.showMessage(params.message, params.status);
+        }
 
     },
 
@@ -41,7 +47,7 @@ var Http = {
             Http.open('GET', url);
 
         }
-
+ 
     },
 
     post: (url, params, callback) => {
@@ -84,12 +90,6 @@ var Http = {
         xhr.open(type, url);
         Http.send(url);
 
-        // movimenta a barra de rolagem para o topo da pÃ¡gina
-        $('html,body').animate({
-            scrollTop: 0
-        }, {
-            duration: 200
-        });
     },
 
     send: (url) => {

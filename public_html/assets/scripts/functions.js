@@ -54,35 +54,19 @@ function editor() {
     //         placeholder: typeof $(this).attr('placeholder') !== 'undefined' ? $(this).attr('placeholder') : null,
     //         content_css: typeof $(this).data('style') !== 'undefined' ? $(this).data('style') : BASE_PATH + 'styles/style.css',
     //     });
-        
+
     // });
 
     // // Editor básico
-    $('.basic--editor').each(function(){
-    //     tinymce.init({
-    //         selector: '.' + $(this).attr('class').replace(/\s/g, '.'),
-    //         height: typeof $(this).data('height') !== 'undefined' ? $(this).data('height') : 250,
-    //         menubar: false,
-    //         plugins: [ 'quickbars' ],
-    //         toolbar: 'bold italic underline | alignleft aligncenter ' +
-    //             'alignright alignjustify | bullist numlist outdent indent | link | ' +
-    //             'removeformat',
-    //         content_css: typeof $(this).data('style') !== 'undefined' ? $(this).data('style') : BASE_PATH + 'styles/style.css',
-    //         placeholder: typeof $(this).attr('placeholder') !== 'undefined' ? $(this).attr('placeholder') : null
-    //     });
+    $('.basic--editor').each(function() {
 
-        new Jodit(this, {
-            uploader: {
-                url: '/somefolder/connector/index.php?action=upload'
-            },
-            filebrowser: {
-                ajax: {
-                    url: '/somefolder/connector/index.php'
-                }
-            }
+        var editor = new Quill(this, {
+            placeholder: typeof $(this).attr('placeholder') !== 'undefined' ? $(this).attr('placeholder') : null,
+            theme: 'snow'
         });
-    
+
     });
+
 
     // // Editor completo
     // $('.full--editor').each(function(){
