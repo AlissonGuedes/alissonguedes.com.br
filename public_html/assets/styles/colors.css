@@ -31,7 +31,7 @@
     --pink-darken-3: #ad1457 !important;
     --pink-darken-4: #880e4f !important;
     --pink-darken-5: #470926 !important;
-    --gradient-45deg-darken-pink-pink : -webkit-gradient(radial, 165 0, 0, 220 -257, 465, from(#470926), to(#7d1144));
+    --gradient-45deg-darken-pink-pink: -webkit-gradient(radial, 165 0, 0, 220 -257, 465, from(#470926), to(#7d1144));
     /** Amber **/
     --amber: #ffc107 !important;
     --amber-lighten-1: #ffca28 !important;
@@ -62,6 +62,21 @@
     --grey-darken-2: ;
     --grey-darken-3: ;
     --grey-darken-4: ;
+    /** Blue **/
+    --blue: #2196f3!important;
+    --blue-ligenten-1: #1e88e5!important;
+    --blue-ligenten-2: #42a5f5!important;
+    --blue-ligenten-3: #64b5f6!important;
+    --blue-ligenten-4: #90caf9!important;
+    --blue-ligenten-5: #bbdefb!important;
+    --blue-accent-1: #82b1ff!important;
+    --blue-accent-2: #448aff!important;
+    --blue-accent-3: #2979ff!important;
+    --blue-accent-4: #2962ff!important;
+    --blue-darken-1: #42a5f5!important;
+    --blue-darken-2: #1976d2!important;
+    --blue-darken-3: #1565c0!important;
+    --blue-darken-4: #0d47a1!important;
 }
 
 
@@ -309,6 +324,7 @@
 .gradient-45deg-darken-pink-pink {
     background: var(--gradient-45deg-darken-pink-pink);
 }
+
 
 /** Purple **/
 
@@ -649,115 +665,115 @@
 }
 
 .blue {
-    background-color: #2196f3!important
+    background-color: var(--blue);
 }
 
 .blue-text {
-    color: #2196f3!important
+    color: var(--blue);
 }
 
 .blue.lighten-5 {
-    background-color: #e3f2fd!important
+    background-color: var(--blue-ligenten-5);
 }
 
 .blue-text.text-lighten-5 {
-    color: #e3f2fd!important
+    color: var(--blue-lighten-5);
 }
 
 .blue.lighten-4 {
-    background-color: #bbdefb!important
+    background-color: var(--blue-lighten-4);
 }
 
 .blue-text.text-lighten-4 {
-    color: #bbdefb!important
+    color: var(--blue-lighten-4);
 }
 
 .blue.lighten-3 {
-    background-color: #90caf9!important
+    background-color: var(--blue-ligenten-3);
 }
 
 .blue-text.text-lighten-3 {
-    color: #90caf9!important
+    color: var(--blue-ligenten-3);
 }
 
 .blue.lighten-2 {
-    background-color: #64b5f6!important
+    background-color: var(--blue-lighten-2);
 }
 
 .blue-text.text-lighten-2 {
-    color: #64b5f6!important
+    color: var(--blue-lighten-2);
 }
 
 .blue.lighten-1 {
-    background-color: #42a5f5!important
+    background-color: var(--blue-lighten-1);
 }
 
 .blue-text.text-lighten-1 {
-    color: #42a5f5!important
+    color: var(--blue-lighten-1);
 }
 
 .blue.darken-1 {
-    background-color: #1e88e5!important
+    background-color: var(--blue-darken-1);
 }
 
 .blue-text.text-darken-1 {
-    color: #1e88e5!important
+    color: var(--blue-darken-1);
 }
 
 .blue.darken-2 {
-    background-color: #1976d2!important
+    background-color: var(--blue-darken-2);
 }
 
 .blue-text.text-darken-2 {
-    color: #1976d2!important
+    color: var(--blue-darken-2);
 }
 
 .blue.darken-3 {
-    background-color: #1565c0!important
+    background-color: var(--blue-darken-3);
 }
 
 .blue-text.text-darken-3 {
-    color: #1565c0!important
+    color: var(--blue-darken-3);
 }
 
 .blue.darken-4 {
-    background-color: #0d47a1!important
+    background-color: var(--blue-darken-4);
 }
 
 .blue-text.text-darken-4 {
-    color: #0d47a1!important
+    color: var(--blue-darken-4);
 }
 
 .blue.accent-1 {
-    background-color: #82b1ff!important
+    background-color: var(--blue-accent-1);
 }
 
 .blue-text.text-accent-1 {
-    color: #82b1ff!important
+    color: var(--blue-accent-1);
 }
 
 .blue.accent-2 {
-    background-color: #448aff!important
+    background-color: var(--blue-accent-2);
 }
 
 .blue-text.text-accent-2 {
-    color: #448aff!important
+    color: var(--blue-accent-2);
 }
 
 .blue.accent-3 {
-    background-color: #2979ff!important
+    background-color: var(--blue-accent-3);
 }
 
 .blue-text.text-accent-3 {
-    color: #2979ff!important
+    color: var(--blue-accent-3);
 }
 
 .blue.accent-4 {
-    background-color: #2962ff!important
+    background-color: var(--blue-accent-4)
 }
 
 .blue-text.text-accent-4 {
-    color: #2962ff!important
+    color: var(--blue-accent-4);
 }
 
 .light-blue {

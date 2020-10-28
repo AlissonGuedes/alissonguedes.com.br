@@ -1486,7 +1486,7 @@ table.dataTable tr.blocked {
 }
 
 .pace .pace-progress {
-    background: linear-gradient(90deg, #d500f9, #ffa000) !important;
+    background: var(--blue-accent-1) !important;
     position: fixed;
     z-index: 9999999;
     top: 0;

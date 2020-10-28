@@ -38,9 +38,10 @@ namespace App\Validations
 					]
 				],
 				'email' => [
-					'rules' => ['trim', 'required'],
+					'rules' => ['trim', 'required', 'valid_email'],
 					'errors' => [
-						'required' => 'O e-mail é obrigatório'
+						'required' => 'O e-mail é obrigatório',
+						'valid_email' => 'Informe um e-mail válido'
 					]
 				],
 				'telefone' => [

@@ -489,9 +489,9 @@
 <!-- END #experience -->
 
 <!-- BEGIN #technology -->
-<section id="technology" class="blue-grey darken-1 scrollspy">
+<section id="technology" class="blue-grey darken-1 scrollspy z-depth-3">
 
-	<header class="blue-grey darken-2 z-depth-3">
+	<header class="blue-grey darken-2">
 		<h3 class="white-text">
 			Tecnologias
 		</h3>
@@ -743,10 +743,53 @@
 </section>
 <!-- END #expetechnologyrience -->
 
-<!-- BEGIN #contact -->
-<section id="contact" class="grey lighten-3 scrollspy">
 
-	<header class="grey lighten-2 z-depth-2">
+<!-- BEGIN #portfolio -->
+<section id="portfolio" class="grey lighten-3 scrollspy mb-1">
+
+	<header class="grey lighten-2 z-depth-5">
+		<h3 class="black-text">
+			Portifólio
+		</h3>
+	</header>
+
+	<div class="row margin">
+
+		<div class="container no-padding">
+
+			<div class="col s12 no-padding">
+
+				<div class="row">
+
+					<div class="col s6 no-padding" style="overflow: hidden; position: relative;">
+						<img class="no-padding materialboxed" style="width: 100%;" src="<?= base_path(); ?>images/portifolio/raboni.png">
+					</div>
+					<div class="col s6 no-padding" style="overflow: hidden; position: relative;">
+						<img class="no-padding materialboxed" width="100%" height="100%" src="<?= base_path(); ?>images/portifolio/pjm.png">
+					</div>
+					<div class="col s6 no-padding" style="overflow: hidden; position: relative;">
+						<img class="no-padding materialboxed" width="100%" height="100%" src="<?= base_path(); ?>images/portifolio/atenepol.png">
+					</div>
+					<div class="col s6 no-padding" style="overflow: hidden; position: relative;">
+						<img class="no-padding materialboxed" width="100%" height="100%" src="<?= base_path(); ?>images/portifolio/lubricenter.png">
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
+<!-- END #portfolio -->
+
+
+<!-- BEGIN #contact -->
+<section id="contact" class="scrollspy">
+
+	<header class="">
 		<h3 class="black-text">
 			Contato
 		</h3>
@@ -754,7 +797,7 @@
 
 	<div class="row margin">
 
-		<div class="container mt-4 mb-4">
+		<div class="container mt-1 mb-3">
 
 			<div class="col s12">
 
@@ -766,7 +809,7 @@
 
 							<div class="card-content">
 
-								<form novalidate action="#" method="post" autocomplete="off">
+								<form novalidate action="<?= base_url(); ?>" method="post" autocomplete="off">
 
 									<div class="row margin">
 										<div class="col s12">
@@ -784,6 +827,16 @@
 												<i class="material-icons prefix">mail</i>
 												<label for="email">E-mail</label>
 												<input type="email" name="email" id="email" class="" required="required">
+											</div>
+										</div>
+									</div>
+
+									<div class="row margin">
+										<div class="col s12">
+											<div class="input-field">
+												<i class="material-icons prefix">phone</i>
+												<label for="email">Telefone</label>
+												<input type="tel" name="telefone" id="telefone" class="" required="required">
 											</div>
 										</div>
 									</div>
@@ -811,6 +864,7 @@
 									<div class="row margin">
 										<div class="col s12 mb-3">
 											<div class="input-field">
+												<input type="hidden" name="_method" value="post">
 												<button type="submit" class="col btn btn-large waves-effect waves-light right">
 													enviar
 													<i class="material-icons margin-left">
@@ -834,33 +888,27 @@
 						<ul class="blue-grey-text text-darken-1">
 
 							<li>
-								<a href="#">
-									<i class="material-icons">face</i>
-									<span>@github</span>
+								<a href="https://www.facebook.com/alissonguedes87">
+									<i class="material-icons">facebook</i>
+									<span>@facebook</span>
 								</a>
 							</li>
 							<li>
-								<a href="#">
-									<i class="material-icons">face</i>
-									<span>@npm</span>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="material-icons">face</i>
-									<span>@linkedin</span>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="material-icons">face</i>
+								<a href="https://www.instagram.com/alisson87g">
+									<i class="material-icons">share</i>
 									<span>@instagram</span>
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="https://github.com/AlissonGuedes">
+									<i class="material-icons">code</i>
+									<span>@github</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/alissonguedes87">
 									<i class="material-icons">face</i>
-									<span>@facebook</span>
+									<span>@linkedin</span>
 								</a>
 							</li>
 

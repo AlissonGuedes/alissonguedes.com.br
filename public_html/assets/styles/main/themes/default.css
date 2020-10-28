@@ -5,6 +5,10 @@ html {
     color: #6b6f82
 }
 
+body {
+    overflow-x: hidden;
+}
+
 section {
     position: relative;
 }
@@ -462,6 +466,59 @@ ul.collection li i {
 }
 
 #technology .card-action {
+    display: flex;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+    height: 40px;
+    justify-content: center;
+}
+
+
+/** portfolio */
+
+#portfolio {
+    color: rgba(0, 0, 0, 0.87);
+    height: auto;
+    flex: 1 0 auto;
+    min-width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#portfolio article h4 {
+    margin: 30px auto;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-shadow: -2px -2px 3px rgba(0, 0, 0, 0.5);
+}
+
+#portfolio .card {
+    overflow: hidden;
+}
+
+#portfolio .card-body {
+    text-align: center;
+    padding: 12px;
+    min-height: 120px;
+    max-height: 120px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    place-content: center;
+    align-items: center;
+}
+
+#portfolio .card-body img,
+#portfolio .card-body svg {
+    width: 60px;
+}
+
+#portfolio .card-action {
     display: flex;
     text-align: center;
     font-size: 16px;

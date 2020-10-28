@@ -34,6 +34,7 @@ $routes->setAutoRoute(true);
 // Rotas comuns que não necessitam de sessão
 $routes -> add('/', 'Home::index');
 $routes -> add('/home', 'Home::index');
+$routes -> post('/', 'Home::insert');
 
 $routes -> add('/produtos', 'Produtos::index');
 $routes -> add('/produtos/(:any)', 'Produtos::categorias/$1/$2');
