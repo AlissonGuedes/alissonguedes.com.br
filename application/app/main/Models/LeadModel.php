@@ -253,6 +253,28 @@ namespace App\Models {
 
 		}
 
+		public function sendMail($template)
+		{
+			
+			$this -> email = \Config\Services :: email();
+
+			$this -> email -> setMailType('html');
+			$this -> email -> setFrom($_POST['email'], $_POST['nome']);
+			$this -> email -> setTo('alissonguedes87@gmail.com');
+			$this -> email -> setSubject('Você recebeu uma nova mensagem do site ' . configuracoes('title'));
+
+			$this -> email -> setMessage($template);
+
+			if ( ! $this -> email -> send() )
+			{
+				$error = 'Não foi possível enviar sua mensagem. Tente novamente mais tarde.';
+				return $error;
+			}
+			
+			return TRUE;
+
+		}
+
 	}
 
 }
