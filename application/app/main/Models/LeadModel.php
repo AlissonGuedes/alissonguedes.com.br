@@ -261,7 +261,7 @@ namespace App\Models {
 			$this -> email -> setMailType('html');
 			$this -> email -> setFrom($_POST['email'], $_POST['nome']);
 			$this -> email -> setTo('alissonguedes87@gmail.com');
-			$this -> email -> setSubject('Você recebeu uma nova mensagem do site ' . configuracoes('title'));
+			$this -> email -> setSubject('Você recebeu uma nova mensagem do site');
 
 			$this -> email -> setMessage($template);
 
