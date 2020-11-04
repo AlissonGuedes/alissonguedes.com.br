@@ -154,10 +154,10 @@ namespace App\Models {
 
 			$this -> email -> setMailType('html');
 			// $this -> email -> setFrom($_POST['email'], $_POST['nome']);
-			$this -> email -> setFrom('noreply@alissonguedes.com.', 'Contato AlissonPG');
+			$this -> email -> setFrom('noreply@alissonguedes.com.br', 'Contato AlissonPG');
 
 			// $this -> email -> setTo(configuracoes('email', 'tb_empresa'), 'Contato do Site' . configuracoes('title'));
-			$this -> email -> setTo('alissonguedes87@gmail.com.br', 'Alisson Guedes');
+			$this -> email -> setTo('alissonguedes87@gmail.com', 'Alisson Guedes');
 
 			$this -> email -> setSubject('Você recebeu uma nova mensagem no site ' . configuracoes('title'));
 
