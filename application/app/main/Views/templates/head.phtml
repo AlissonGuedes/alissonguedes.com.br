@@ -26,7 +26,7 @@
 	<meta name="DC.title" content="<?= configuracoes('title'); ?>">
 	<meta property="og:title" content="<?= configuracoes('title'); ?>" />
 
-	<title> <?= configuracoes('title'); ?> </title>
+	<title> <?= configuracoes('title') ?? 'Alisson Guedes'; ?> </title>
 
 	<noscript>
 		<meta http-equiv="Refresh" content="0; url=<?= base_url(); ?>nojs">
@@ -35,5 +35,3 @@
 	<?php require('includes/styles.phtml'); ?>
 
 </head>
-
-<head>

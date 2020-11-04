@@ -154,8 +154,10 @@ namespace App\Models {
 
 			$this -> email -> setMailType('html');
 			$this -> email -> setFrom($_POST['email'], $_POST['nome']);
-			$this -> email -> setTo('alissonguedes87@gmail.com');
-			$this -> email -> setSubject('Você recebeu uma nova mensagem do site');
+
+			$this -> email -> setTo(configuracoes('email', 'tb_empresa'), 'Contato do Site' . configuracoes('title'));
+
+			$this -> email -> setSubject('Você recebeu uma nova mensagem no site ' . configuracoes('title'));
 
 			$this -> email -> setMessage($template);
 
@@ -163,6 +165,8 @@ namespace App\Models {
 			{
 				$error = 'Não foi possível enviar sua mensagem. Tente novamente mais tarde.';
 				return $error;
+			} else {
+				
 			}
 			
 			return TRUE;
