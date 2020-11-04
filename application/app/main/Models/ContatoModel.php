@@ -157,7 +157,7 @@ namespace App\Models {
 			$this -> email -> setFrom('noreply@alissonguedes.com.', 'Contato AlissonPG');
 
 			// $this -> email -> setTo(configuracoes('email', 'tb_empresa'), 'Contato do Site' . configuracoes('title'));
-			$this -> email -> setTo('alissonguedes87@gmail.com', 'Alisson Guedes');
+			$this -> email -> setTo('alissonguedes87@gmail.com.br', 'Alisson Guedes');
 
 			$this -> email -> setSubject('Você recebeu uma nova mensagem no site ' . configuracoes('title'));
 
